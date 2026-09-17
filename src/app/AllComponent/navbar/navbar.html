@@ -1,4 +1,3 @@
-
 <!-- navbar.component.html -->
 
 <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white">
@@ -13,36 +12,50 @@
         </button>
 
         @if(isMobilemenuOpen){
-          <div class="items-center gap-7 flex lg:hidden">
+        <div class="items-center gap-7  z-50 absolute top-14 bg-white  p-10 rounded-2xl space-y-3 pr-20  lg:hidden">
 
-            <a routerLink="/" routerLinkActive="text-indigo-600"
-                class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
-                Home
-            </a>
 
-            <a routerLink="/shop" routerLinkActive="text-indigo-600"
-                class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
-                Shop
-            </a>
+            <div>
+                <a routerLink="/" routerLinkActive="text-indigo-600"
+                    class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
+                    Home
+                </a>
+            </div>
 
-            <a routerLink="/categories" routerLinkActive="text-indigo-600"
-                class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
-                Categories
-            </a>
+        <div></div>
+        
 
-            <a routerLink="/new-arrivals" routerLinkActive="text-indigo-600"
-                class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
-                New Arrivals
-            </a>
 
-            <a routerLink="/offers" routerLinkActive="text-indigo-600"
-                class="text-sm font-medium text-red-500 transition hover:text-red-600">
-                Offers
-            </a>
+            <div>
+                <a routerLink="/shop" routerLinkActive="text-indigo-600"
+                    class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
+                    Shop
+                </a>
+            </div>
+
+            <div>
+                <a routerLink="/categories" routerLinkActive="text-indigo-600"
+                    class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
+                    Categories
+                </a>
+            </div>
+            <div>
+                <a routerLink="/new-arrivals" routerLinkActive="text-indigo-600"
+                    class="text-sm font-medium text-gray-700 transition hover:text-indigo-600">
+                    New Arrivals
+                </a>
+
+            </div>
+            <div>
+                <a routerLink="/offers" routerLinkActive="text-indigo-600"
+                    class="text-sm font-medium text-red-500 transition hover:text-red-600">
+                    Offers
+                </a>
+            </div>
 
         </div>
         }
-       
+
 
         <!-- Logo -->
         <a routerLink="/" class="shrink-0">
