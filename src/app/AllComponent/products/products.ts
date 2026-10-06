@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{DataType} from '../../../../dataType'
+import { DataType } from '../../../../dataType'
 import { NgFor } from '@angular/common';
 
 @Component({
@@ -10,9 +10,9 @@ import { NgFor } from '@angular/common';
 })
 export class Products {
 
-  products:DataType[]
+  products: DataType[]
 
-  constructor(){
+  constructor() {
     this.products = [
       {
         id: 1,
@@ -38,6 +38,13 @@ export class Products {
         price: 5.99,
         quantity: 10
       }
-    ]; 
+    ];
+  }
+
+  deleteProduct(id: number) {
+    const index = this.products.findIndex(product => product.id === id);
+    this.products.splice(index, 1);
+    // console.log(`Product with ID ${id},${index} has been deleted.`);
+    console.log(id, index, this.products)
   }
 }
